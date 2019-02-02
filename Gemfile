@@ -17,12 +17,17 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0'
+gem 'factory_bot'
+gem "factory_bot_rails"
 gem 'popper_js'
 gem 'tether-rails'
 gem 'devise-i18n'
 gem 'devise', '~> 4.5'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'rails_admin'
+gem 'cancancan', '~> 2.0'
+
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
