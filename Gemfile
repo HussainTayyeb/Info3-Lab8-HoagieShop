@@ -26,6 +26,7 @@ gem 'devise', '~> 4.5'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'rails_admin'
 gem 'cancancan', '~> 2.0'
+gem 'stripe'
 
 
 # Use CoffeeScript for .coffee assets and views

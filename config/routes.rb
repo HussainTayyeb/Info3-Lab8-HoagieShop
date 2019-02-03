@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :orders
   resources :feedbacks
+  resources :charges
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :admins
   resources :customers
