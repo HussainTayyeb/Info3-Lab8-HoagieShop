@@ -19,6 +19,8 @@
   <strong>Publishdate:</strong>
   <%= @feedback.publishdate %>
 </p>
-
+<div style = "width: 10%; height:auto">
+<%= image_tag(@feedback.image, style: 'width: 100%') %>
+</div>
 <%= link_to 'Edit', edit_feedback_path(@feedback) %> |
 <%= link_to 'Back', feedbacks_path %>
