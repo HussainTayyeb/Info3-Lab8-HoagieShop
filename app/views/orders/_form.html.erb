@@ -11,11 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
+
     <%= form_for(@order) do |f| %>
 
       <%= f.label :brot %>
       <%= f.select :brot, [ 'Sesam','Whole-wheat-bread','Whitebread' ], :prompt => 'Select Bread' %>
+        </ul>
   </div>
 
   <div class="field">
