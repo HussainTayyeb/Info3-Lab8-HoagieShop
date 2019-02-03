@@ -1,0 +1,40 @@
+<%= form_with(model: order, local: true) do |form| %>
+  <% if order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form_for(@order) do |f| %>
+
+      <%= f.label :brot %>
+      <%= f.select :brot, [ 'Sesam','Whole-wheat-bread','Whitebread' ], :prompt => 'Select Bread' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vegetables %>
+    <%= f.select :vegetables, [ 'Cucumber','Tomatoes','Onions' ], :prompt => 'Select Vegetable' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sauce %>
+    <%= f.select :sauce, [ 'Terriyaki','Sour Cream','Barbecue' ], :prompt => 'Select Sauce' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :extras %>
+    <%= f.select :extras, [ 'Cheese','Pork','Hamm' ], :prompt => 'Select Extras' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+<% end %>
